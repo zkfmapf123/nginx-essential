@@ -66,6 +66,17 @@
   - Revese Proxy, Load Balancing, Caching -> 적은 메모리로 대규모 트래픽 처리 가능
   - 동적인 콘텐츠 + 부하분산이 필요한 대규모 트래픽 시스템
 
+## HTTP Stress test
+
+```
+    // client
+    ab -n 10000 [uri]
+
+    // server
+    sudo apt-get install iftop
+    sudo itftop -i eth0
+```
+
 ## Reference
 
 <p><a href="https://nginx-playground.wizardzines.com">nginx playground</a></p>
