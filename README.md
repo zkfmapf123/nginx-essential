@@ -44,6 +44,10 @@
     sudo apt-get install nginx
 ```
 
+## Configure-file
+
+- nginx.service -> nginx 에서 systemd를 사용하기 위한 설정파일
+
 ## Nginx vs Apache
 
 - Apache
@@ -66,3 +70,4 @@
 
 <p><a href="https://nginx-playground.wizardzines.com">nginx playground</a></p>
 <p><a href="https://nginx.org/en/download.html">nginx org</a></p>
+<p><a href="https://www.nginx.com/resources/wiki/start/topics/examples/systemd/">nginx systemd 사용 문서</p>
