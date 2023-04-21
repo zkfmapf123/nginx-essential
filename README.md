@@ -3,6 +3,38 @@
 ## Before Read
 
 - Need Linux Environment (https://github.com/zkfmapf123/devops-ec2-docker)
+- Download Nginx MainLine Version
+
+```
+    wget https://nginx.org/download/nginx-x.xx.x.tar.gz
+    tar -zxvf nginx-x.xx.x
+    cd nginx-x.xx.x
+
+    // need compiler
+    sudo apt-get install build-essential
+
+    // need PCRE library
+    sudo apt-get install libpcre3 libpcre3-dev zlib1g zlib1g-dev libssl-dev
+
+    // cd nginx-x.xx.x
+    ./configure --sbin-path=/usr/bin/nginx \
+    --conf-path=/etc/nginx/nginx.conf \
+    --error-log-path=/var/log/nginx/error.log \
+    --http-log-path=/var/log/nginx/access.log \
+    --with-pcre --pid-path=/var/run/nginx.pid
+
+    make
+    make install or sudo make install
+
+    ls -l /etc/nginx
+    nginx -v
+```
+
+## NginX
+
+- ./configure
+  - 구성옵션 설정
+  - 사용자의 빌드 옵션에 맞춰서 수정가능
 
 ## Install
 
