@@ -74,7 +74,7 @@
 
     // server
     sudo apt-get install iftop
-    sudo itftop -i eth0
+    sudo iftop -i eth0
 ```
 
 ## Reference
