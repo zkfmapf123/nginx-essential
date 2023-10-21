@@ -1,3 +1,0 @@
-name : leedonggyu
-age : 29
-job : programmer
